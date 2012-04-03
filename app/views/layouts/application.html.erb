@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Derparty</title>
+  <title>:::&szlig;&uuml;&szlig;&euro;::: Willk&ouml;mmen to Der Party :::&szlig;&uuml;&szlig;&euro;:::</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+  <%= yield %>
+  
+<div class="container">  
+  <hr>
+  <footer class="footer">
+    <p>All Songs by Der Party</p>
+    <p>&copy; <%= Date.today.year %></p>
+    <p><a href="http://countryclubsandwiches.com/">The Country Club Sandwiches</a></p>
+  </footer>
+</div>
 
 </body>
 </html>
