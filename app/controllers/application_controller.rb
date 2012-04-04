@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
   
-  Rails.env.production? do
+  if Rails.env.production? do
     before_filter :check_url
   end
 
