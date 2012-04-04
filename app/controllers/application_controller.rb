@@ -1,11 +1,9 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
   
-  Rails.env.production? do
-    before_filter :check_url
-  end
+  before_filter :check_uri
 
-  def check_url
+  def check_uri
     redirect_to request.protocol + "www." + request.host_with_port + request.fullpath if !/^www/.match(request.host)
   end
 end
