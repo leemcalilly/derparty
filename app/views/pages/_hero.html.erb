@@ -1,13 +1,20 @@
 <section>
-  <div class="pink_top">  
-    <div class="row">
-      <div class="hero-unit">
-        <%= image_tag "der_party.gif", :alt => "welcome to der party"%>
-        <h1>Willk&ouml;mmen to Der Party</h1>
-        <h2>
-          <%= link_to "Get ze Musik", "http://derparty.bandcamp.com/album/der-party", :class=> "btn btn-primary" %>
-        </h2>          
+  <div class="pink_top"> 
+    <div class="container"> 
+      <div class="row">
+        <div class="photo span12">
+          <%= image_tag "der_party.gif", :alt => "welcome to der party"%>
+        </div>
       </div>
-    </div>
+      
+      <div class="row">
+        <div class="span12" id="welcome">
+          <h1>Willk&ouml;mmen to Der Party</h1>
+          <h2>
+            <%= link_to "Get ze Musik", "http://derparty.bandcamp.com/album/der-party", :class=> "btn btn-primary" %>
+          </h2>
+        </div>
+      </div>
+    </div>        
   </div>
 </section>
